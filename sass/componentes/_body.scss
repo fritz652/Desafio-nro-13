@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background: #E9ECF4; */
+	color:$negro;
+	font-family: 'Roboto', sans-serif;
+	ul,li{
+		list-style: none;
+	}	
+}
+
+
+*, ::after, ::before {
+    box-sizing:unset;
+}
+
+*,a{
+	text-decoration: none;
+}

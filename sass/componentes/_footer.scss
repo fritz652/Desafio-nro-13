@@ -1,0 +1,135 @@
+/* Aquí empieza el footer */
+
+
+
+.footerSongs {
+    padding:30px;
+    width:90% ;
+}
+
+
+.f1{
+    background: $blanco;
+    color: $negro;
+}
+
+.f1 > .Suscribete > .fritzSubcripcion {
+    text-decoration:none;
+    font-family: 'Economica', sans-serif;
+    font-size: 70px;
+}
+
+
+.form-contact-us{
+    width: 90%;
+    padding: 10px;
+}
+
+
+
+.form-contact-us .h2{
+    height: 40px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls{
+    width: 95%;
+    background:$blanco;
+    border: none;
+    padding: 10px;
+    color: $negro;
+    margin: 18px;
+    font-size: 10px;
+
+}
+
+.botons{
+    width: 100%;
+    background:$verde_jade;
+    border: none;
+    padding: 12px;
+    color: $blanco;
+    margin: 18px;
+    font-size: 20px;
+}
+
+
+
+.fa-facebook:hover{
+    transition: 1.5s;
+    font-size: 2rem;
+}
+
+.fa-instagram-square:hover{
+    transition: 1.5s;
+    font-size: 2rem;
+}
+
+.fa-youtube:hover{
+    transition: 1.5s;
+    font-size: 2rem;
+}
+
+.fa-tiktok:hover{
+    transition: 1.5s;
+    font-size: 2rem;
+}
+
+
+
+.contac{
+    transition: 3s;
+    font-size: 1.5rem;
+}
+
+.socialNetworks{
+    padding: center;
+
+   /*  width: 90%;
+    background: black;
+    align-items: center;
+    justify-content: center; */
+}
+
+.redes{
+    transition: 3s;
+    font-size: 1.5rem;
+}
+
+
+.Suscribete{
+    padding: 20px;
+
+    width: 95%;
+    background:$blanco;
+    border: none;
+    padding: 10px;
+    color:$negro;
+    margin: 18px;
+    font-size: 10px;
+}
+
+.control{
+    width: 70%;
+    background:	$verde_jade;
+    border: none;
+    padding: 10px;
+    color: $negro;
+    margin: 18px;
+    font-size: 10px;
+
+}
+
+.enviar{
+    width: 80%;
+    background:$verde_jade;
+    border: none;
+    padding: 12px;
+    color: $blanco;
+    margin: 18px;
+    font-size: 20px;
+}
+
+/* Aquí termina el footer */

@@ -1,0 +1,119 @@
+
+/* Inicio grid 1 */
+
+.contenedor {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+}
+
+.header {
+	/* background: #12203E; */
+	/* color: #fff;..................... */
+	grid-area: header;
+    background:$blanco_humo
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: $naranja;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+.contenedor .footer {
+	background:linear-gradient($negro,$azul_oscuro, $plomo_claro);
+    width: 100%;
+    /* background: #000; */
+	color: $blanco;
+	grid-area: footer;
+    display: flex;
+    justify-content: center;
+
+    /* padding: 30px; */
+    /* margin: auto; */
+    margin-top: 100px; /* lo pone mas abajo, tal por el momento queda */
+
+}
+
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "widget-1 widget-1 widget-2"
+						 "sidebar sidebar sidebar"
+						 "footer footer footer";
+	}
+}
+
+
+/* Fin grid 1 */
+
+
+/* Inicio grid 2 */
+
+.cuerpoInd{
+    width: 100%;
+    max-width: 100%;
+    min-width: none;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:
+        "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1"
+        "cuerpoHijo-cpn2 cuerpoHijo-cpn3 cuerpoHijo-cpn4"
+
+}
+
+.cuerpoInd .cuerpoHijo-cp1{
+    grid-area: cuerpoHijo-cp1;
+}
+
+.cuerpoInd .cuerpoHijo-cpn2{
+    grid-area: cuerpoHijo-cpn2;
+}
+
+.cuerpoInd .cuerpoHijo-cpn3{
+    grid-area: cuerpoHijo-cpn3;
+}
+.cuerpoInd .cuerpoHijo-cpn4{
+    grid-area: cuerpoHijo-cpn4;
+}
+
+
+@media screen and (max-width: 768px){
+	.cuerpoInd {
+		grid-template-areas: "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1"
+						 "cuerpoHijo-cpn2 cuerpoHijo-cpn2 cuerpoHijo-cpn2"
+                         "cuerpoHijo-cpn3 cuerpoHijo-cpn3 cuerpoHijo-cpn3"
+                         "cuerpoHijo-cpn4 cuerpoHijo-cpn4 cuerpoHijo-cpn4";
+	}
+}
+
+/* Fin grid 2 */
