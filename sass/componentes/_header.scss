@@ -97,7 +97,7 @@
 /* *****===>Inicio del menu (nav)<===***** */
 .navegadorDad{
     height: 80px;
-
+    
     .navegadorDad__container {
         width: 1000px;
         margin: auto;
@@ -127,6 +127,12 @@
         .menu li a:hover {
             color: $rosado;
             transition: all.3s;
+
+            background-color: $negro;  /* agregado */
+        }
+
+        a{
+            height: 100%;  /* agregado */
         }
 
 
@@ -142,7 +148,8 @@
 .menu__subMenu{
     position: absolute;
     /* background: #3333; */
-    background:$blanco;
+    /* background:$blanco; */  /* bloqueado */
+    background-color: $negro; /* agregado */
 
     width: 100%;
     height: auto;

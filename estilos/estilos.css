@@ -193,12 +193,20 @@ p {
       /* font-family: "Open sans"; */ }
     .navegadorDad .navegadorDad__container .menu li a:hover {
       color: #ce7dce;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      background-color: #000;
+      /* agregado */ }
+    .navegadorDad .navegadorDad__container a {
+      height: 100%;
+      /* agregado */ }
 
 .menu__subMenu {
   position: absolute;
   /* background: #3333; */
-  background: #fff;
+  /* background:$blanco; */
+  /* bloqueado */
+  background-color: #000;
+  /* agregado */
   width: 100%;
   height: auto;
   /* width: 120%; */
