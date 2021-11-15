@@ -213,7 +213,7 @@ p {
   visibility: hidden;
   transition: opacity 1.5s;
   z-index: 100;
-  /* display: flex; */ }
+  display: flex; }
   .menu__subMenu li a {
     display: block;
     padding: 15px; }
@@ -405,6 +405,9 @@ p {
   font-size: 20px; }
 
 /* Aquí termina el footer */
+.sitemap__navegadorDad--container > li > a {
+  text-align: centar; }
+
 .navbar {
   overflow: hidden;
   background-color: #333; }
