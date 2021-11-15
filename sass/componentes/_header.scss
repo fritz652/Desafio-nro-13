@@ -96,13 +96,13 @@
 
 /* *****===>Inicio del menu (nav)<===***** */
 .navegadorDad{
-    height: 80px;
+    /* height: 80px; */
     
     .navegadorDad__container {
         width: 1000px;
         margin: auto;
         font-family: 'Poppins', sans-serif;
-        background-color: $blanco;
+        /* background-color: $blanco; */
         text-align: center;
 
         ul, ol {
@@ -125,7 +125,7 @@
         }
         
         .menu li a:hover {
-            color: $rosado;
+            color: $blanco;
             transition: all.3s;
 
             background-color: $negro;  /* agregado */

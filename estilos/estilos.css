@@ -174,12 +174,12 @@ p {
 /* ****Fin del buscador**** */
 /* *****===>Inicio del menu (nav)<===***** */
 .navegadorDad {
-  height: 80px; }
+  /* height: 80px; */ }
   .navegadorDad .navegadorDad__container {
     width: 1000px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    /* background-color: $blanco; */
     text-align: center; }
     .navegadorDad .navegadorDad__container ul, .navegadorDad .navegadorDad__container ol {
       list-style: none; }
@@ -192,7 +192,7 @@ p {
       color: #353835;
       /* font-family: "Open sans"; */ }
     .navegadorDad .navegadorDad__container .menu li a:hover {
-      color: #ce7dce;
+      color: #fff;
       transition: all 0.3s;
       background-color: #000;
       /* agregado */ }
