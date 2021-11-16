@@ -106,6 +106,7 @@
         font-family: 'Poppins', sans-serif;
         /* background-color: $blanco; */
         text-align: center;
+        
 
         ul, ol {
             list-style: none;
@@ -126,15 +127,16 @@
             
         }
         
-        .menu li a:hover {
+        .menu li a:hover  {
             color: $blanco;
             transition: all.3s;
-
-            background-color: $negro;  /* agregado */
+            background-color: $negro;  /* agregado ........ */
         }
+        
 
         a{
             height: 100%;  /* agregado */
+            color: #908f90;
         }
 
 
@@ -149,9 +151,10 @@
 
 .menu__subMenu{
     position: absolute;
+    left: 0;
     /* background: #3333; */
     /* background:$blanco; */  /* bloqueado */
-    background-color: $negro; /* agregado */
+    background-color: $negro; /* agregado......... */
 
     width: 100%;
     height: auto;
@@ -159,11 +162,11 @@
     visibility: hidden;
     transition: opacity 1.5s;
     z-index: 100;
-    display: flex;
+    /* display: flex; no flex 16.11.21 */
 
     li a{
         display: block;
-        padding: 15px;
+        padding: 5px;
     }
 }
 

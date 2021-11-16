@@ -108,6 +108,39 @@ p {
     grid-template-areas: "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1" "cuerpoHijo-cpn2 cuerpoHijo-cpn2 cuerpoHijo-cpn2" "cuerpoHijo-cpn3 cuerpoHijo-cpn3 cuerpoHijo-cpn3" "cuerpoHijo-cpn4 cuerpoHijo-cpn4 cuerpoHijo-cpn4"; } }
 
 /* Fin grid 2 */
+/* Inicio grid 3 */
+.menu__subMenu {
+  width: 100%;
+  max-width: 100%;
+  min-width: none;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
+  column-gap: 5px;
+  grid-template-areas: "menu__subMenu--img menu__subMenu--calzado menu__subMenu--ropa menu__subMenu--accesorios menu__subMenu--sandalias"; }
+
+.menu__subMenu--img {
+  grid-area: menu__subMenu--img;
+  height: 300px; }
+
+.menu__subMenu--calzado {
+  grid-area: menu__subMenu--calzado; }
+
+.menu__subMenu--ropa {
+  grid-area: menu__subMenu--ropa; }
+
+.menu__subMenu--accesorios {
+  grid-area: menu__subMenu--accesorios; }
+
+.menu__subMenu--sandalias {
+  grid-area: menu__subMenu--sandalias; }
+
+@media screen and (max-width: 768px) {
+  .cuerpoInd {
+    grid-template-areas: "menu__subMenu--img menu__subMenu--calzado menu__subMenu--ropa menu__subMenu--accesorios menu__subMenu--sandalias"; } }
+
+/* Fin grid 3 */
 /* Inicio del  Top bar */
 .header__allAtention {
   background: #000;
@@ -196,28 +229,30 @@ p {
       color: #fff;
       transition: all 0.3s;
       background-color: #000;
-      /* agregado */ }
+      /* agregado ........ */ }
     .navegadorDad .navegadorDad__container a {
       height: 100%;
-      /* agregado */ }
+      /* agregado */
+      color: #908f90; }
 
 .menu__subMenu {
   position: absolute;
+  left: 0;
   /* background: #3333; */
   /* background:$blanco; */
   /* bloqueado */
   background-color: #000;
-  /* agregado */
+  /* agregado......... */
   width: 100%;
   height: auto;
   /* width: 120%; */
   visibility: hidden;
   transition: opacity 1.5s;
   z-index: 100;
-  display: flex; }
+  /* display: flex; no flex 16.11.21 */ }
   .menu__subMenu li a {
     display: block;
-    padding: 15px; }
+    padding: 5px; }
 
 .menu li:hover .menu__subMenu {
   visibility: visible;

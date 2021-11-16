@@ -117,3 +117,51 @@
 }
 
 /* Fin grid 2 */
+
+/* Inicio grid 3 */
+
+.menu__subMenu{
+    width: 100%;
+    max-width: 100%;
+    min-width: none;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+    column-gap: 5px;
+
+    grid-template-areas:
+        "menu__subMenu--img menu__subMenu--calzado menu__subMenu--ropa menu__subMenu--accesorios menu__subMenu--sandalias"
+
+}
+
+.menu__subMenu--img{
+    grid-area: menu__subMenu--img;
+    height:300px;
+}
+
+.menu__subMenu--calzado{
+    grid-area: menu__subMenu--calzado;
+}
+
+.menu__subMenu--ropa{
+    grid-area: menu__subMenu--ropa;
+}
+.menu__subMenu--accesorios{
+    grid-area: menu__subMenu--accesorios;
+}
+.menu__subMenu--sandalias{
+    grid-area: menu__subMenu--sandalias;
+}
+
+
+@media screen and (max-width: 768px){
+	.cuerpoInd {
+		grid-template-areas: "menu__subMenu--img menu__subMenu--calzado menu__subMenu--ropa menu__subMenu--accesorios menu__subMenu--sandalias";
+
+
+	}
+}
+
+
+/* Fin grid 3 */
