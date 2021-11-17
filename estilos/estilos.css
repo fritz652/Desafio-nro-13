@@ -137,10 +137,47 @@ p {
   grid-area: menu__subMenu--sandalias; }
 
 @media screen and (max-width: 768px) {
-  .cuerpoInd {
+  .menu__subMenu {
     grid-template-areas: "menu__subMenu--img menu__subMenu--calzado menu__subMenu--ropa menu__subMenu--accesorios menu__subMenu--sandalias"; } }
 
 /* Fin grid 3 */
+/* Inicio grid 4 footer */
+.socialNetworks {
+  width: 100%;
+  max-width: 100%;
+  min-width: none;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, auto);
+  column-gap: 5px;
+  grid-template-areas: "redes__titulo" "redes__fb " "redes__instagram" "redes__youtube" "redes__tiktok"; }
+
+.redes__titulo {
+  grid-area: redes__titulo;
+  text-align: center; }
+
+.redes__fb {
+  grid-area: redes__fb;
+  text-align: center; }
+
+.redes__instagram {
+  grid-area: redes__instagram;
+  text-align: center; }
+
+.redes__youtube {
+  grid-area: redes__youtube;
+  text-align: center; }
+
+.redes__tiktok {
+  grid-area: redes__tiktok;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .redes__titulo {
+    grid-template-areas: "redes__titulo" "redes__fb" "redes__instagram" "redes__youtube" "redes__tiktok"; } }
+
+/* Fin grid 4 footer */
 /* Inicio del  Top bar */
 .header__allAtention {
   background: #000;
@@ -403,7 +440,7 @@ p {
 
 .socialNetworks {
   padding: center;
-  /*  width: 90%;
+  /* width: 90%;
     background: black;
     align-items: center;
     justify-content: center; */ }
