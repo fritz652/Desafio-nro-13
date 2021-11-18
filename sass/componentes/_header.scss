@@ -127,7 +127,7 @@
             
         }
         
-        .menu li a:hover  {
+        .menu li a:hover, .menu__subMenu:hover .dado {
             color: $blanco;
             transition: all.3s;
             background-color: $negro;  /* agregado ........ */

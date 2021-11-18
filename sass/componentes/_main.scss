@@ -7,16 +7,42 @@
     height: 500px;
 }
 
-.imaCal{
-    width: 70%;
+  /* La imagen */
+  .hero-image {
+    /* Degradado para el efecto de fondo, asi se lee mejor el texto */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/colores.jpg");
+  
+    /* Establece una altura */
     height: 100%;
+  
+    /* centrando la iamgen*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Centra el texto en la imagen */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+/* lo que sigue tal vez se borre */
+.imaCal{
+    width: 100%;
+    height: 135%;
     max-width: 3000px;
     max-height: 465px;
-    /* object-fit: none;   */
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-}
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
 
 .imaCal_1{
     width: 100%;
