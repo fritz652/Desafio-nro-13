@@ -88,6 +88,7 @@
     grid-template-areas:
         "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1"
         "cuerpoHijo-cpn2 cuerpoHijo-cpn3 cuerpoHijo-cpn4"
+        "cuerpoHIjo-cpn5 cuerpoHijo-cpn6 cuerpoHijo-cpn7"
 
 }
 
@@ -106,13 +107,28 @@
     grid-area: cuerpoHijo-cpn4;
 }
 
+.cuerpoHIjo-cpn5{
+    grid-area: cuerpoHijo-cpn5;
+}
+
+.cuerpoHijo-cpn6{
+    grid-area:  cuerpoHijo-cpn6;
+} 
+
+.cuerpoHijo-cpn7{
+    grid-area:  cuerpoHijo-cpn7;
+}
+
 
 @media screen and (max-width: 768px){
 	.cuerpoInd {
 		grid-template-areas: "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1"
 						 "cuerpoHijo-cpn2 cuerpoHijo-cpn2 cuerpoHijo-cpn2"
                          "cuerpoHijo-cpn3 cuerpoHijo-cpn3 cuerpoHijo-cpn3"
-                         "cuerpoHijo-cpn4 cuerpoHijo-cpn4 cuerpoHijo-cpn4";
+                         "cuerpoHijo-cpn4 cuerpoHijo-cpn4 cuerpoHijo-cpn4"
+                         "cuerpoHijo-cpn5 cuerpoHijo-cpn5 cuerpoHijo-cpn5"
+                         "cuerpoHijo-cpn6 cuerpoHijo-cpn6 cuerpoHijo-cpn6"
+                         "cuerpoHijo-cpn7 cuerpoHijo-cpn7 cuerpoHijo-cpn7";
 	}
 }
 
