@@ -324,15 +324,15 @@
                 <section class="footerSongs f1">
                     <section class="Suscribete"><!-- Aqui emepieza susbcripción -->
                         <h2 class="fritzSubcripcion">Fritz</h2>
-                        <h3>Suscribete</h3>
+                        <h3 class="suscribete_text">Suscribete</h3>
                         <form action="suscribete.php">
-                            <div>
+                            <div class="all__active">
                                 <div>
-                                    <input class="control" type="text" name="correo" id="correo" placeholder="Ingrese tu e-mail">
-                                </div><br>
+                                    <input class="control actve" type="text" name="correo" id="correo" placeholder="Ingrese tu e-mail">
+                                </div>
             
                                 <div>
-                                    <input Class="enviar" type="submit">
+                                    <input Class="enviar active" type="submit">
                                 </div>
                             </div>
                         </form>
@@ -349,7 +349,7 @@
                             <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
                             <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
                             <input class="controls" type="text" name ="mensaje" id = "mensaje" placeholder="Escribe tu mensaje aquí">
-                            <input class="botons" type="submit">
+                            <input class="controls botons" type="submit">
                         </form>
                         
                     </section><!--Aquí terminan el formulario-->
@@ -379,6 +379,46 @@
                 </section>
             </footer>
 
+            <div class="footer2">
+                <div class="suscribete2">
+                    <h2>Fritz</h2>
+                    <h3>Suscribete</h3>
+                    <form action="guardar.php">
+                        <input class="ingresar__email" type="text" name="correo" id="correo" placeholder="Ingrese tu e-mail">
+                        <input Class="enviar2" type="submit">
+                    </form>
+                </div>
+
+                <form action="guardar.php">
+                    <div class="contactanos2">
+                        <h2 class="contac2">Contactanos</h2>
+                        <input class="contac2__caja" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input class="contac2__caja" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                        <input class="contac2__caja" type="text" name="correo" id="correo" placeholder="Correo">
+                        <input class="contac2__caja" type="text" name ="mensaje" id = "mensaje" placeholder="Escribe tu mensaje aquí">
+                        <input class="contac2__caja boton2" type="submit">
+                    </div>
+                </form>
+                
+
+                <div class="redes2">
+                    <div class="redes__titulo2">
+                        <h3 class="redes2">Nuestras redes</h3>
+                    </div>
+                    <div class="redes__fb2">
+                        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="redes__instagram2">
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                    <div class="redes__youtube2">
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="redes__tiktok2">
+                        <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
             <!-- Fin Footer -->
         </div>
 
