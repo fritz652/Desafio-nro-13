@@ -131,13 +131,15 @@
     font-size: 10px;
 }
 
-.all__active{
-    width: 100%;
+.all__active--footer{
+    width: 90%;
 }
 
-.active{
+.active--footer{
     display: flex;
-    margin: 5px;
+    margin: 20px 5px;
+    /* text-align: center; */
+
 }
 
 .control{
@@ -167,47 +169,3 @@
 /* Aquí termina el footer */
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-.footer2{
-    display: flex;
-    .suscribete2{
-        text-align: center;
-        background-color:$gz;
-        color:$blanco;
-    }
-    .contactanos2{
-        text-align: center;
-        background-color: $negro;
-        color:$blanco;
-
-        .contac2__caja{
-            width: 100%;
-            background:$blanco;
-            border: none;
-            padding: 10px;
-            color: $negro;
-            margin: 5px;
-            font-size: 10px;
-        }
-
-        .boton2{
-            width: 100%;
-            background:$verde_jade;
-            border: none;
-            padding: 10px;
-            color: $blanco;
-            /* margin: 2px; */
-            font-size: 20px;
-            padding: 5px;
-        }
-    }
-    .redes2{
-        text-align: center;
-        background-color:$negro;
-        color:$blanco;
-    }
-}
-
-
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-

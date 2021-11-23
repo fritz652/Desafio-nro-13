@@ -98,6 +98,7 @@ footer2{
     grid-template-areas:
         "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1"
         "cuerpoHijo-cpn2 cuerpoHijo-cpn3 cuerpoHijo-cpn4"
+        "tendencias tendencias tendencias"
         "cuerpoHIjo-cpn5 cuerpoHijo-cpn6 cuerpoHijo-cpn7"
 
 }
@@ -115,6 +116,14 @@ footer2{
 }
 .cuerpoInd .cuerpoHijo-cpn4{
     grid-area: cuerpoHijo-cpn4;
+}
+.cuerpoInd .tendencias{
+    grid-area: tendencias;
+    background: $negro;
+    color: $blanco;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
 }
 
 .cuerpoHIjo-cpn5{
@@ -136,6 +145,7 @@ footer2{
 						 "cuerpoHijo-cpn2 cuerpoHijo-cpn2 cuerpoHijo-cpn2"
                          "cuerpoHijo-cpn3 cuerpoHijo-cpn3 cuerpoHijo-cpn3"
                          "cuerpoHijo-cpn4 cuerpoHijo-cpn4 cuerpoHijo-cpn4"
+                         "tendencias tendencias tedencias"
                          "cuerpoHijo-cpn5 cuerpoHijo-cpn5 cuerpoHijo-cpn5"
                          "cuerpoHijo-cpn6 cuerpoHijo-cpn6 cuerpoHijo-cpn6"
                          "cuerpoHijo-cpn7 cuerpoHijo-cpn7 cuerpoHijo-cpn7";
@@ -205,10 +215,10 @@ footer2{
 
     grid-template-areas:
         "redes__titulo"
+        "redes__tiktok"/* en realidad es instagram */
         "redes__fb "
         "redes__instagram"
         "redes__youtube"
-        "redes__tiktok"
 }
 
 .redes__titulo{
@@ -241,10 +251,10 @@ footer2{
 @media screen and (max-width: 768px){
 	.redes__titulo {
 		grid-template-areas:"redes__titulo"
+                            "redes__tiktok"
                             "redes__fb"
                             "redes__instagram"
-                            "redes__youtube"
-                            "redes__tiktok"; 
+                            "redes__youtube"; 
 
 	}
 }

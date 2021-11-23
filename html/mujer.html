@@ -207,8 +207,10 @@
                     </ul>
                 </li>
 
+                <li><a href="#contactanos__id">Contactanos</a></li>
 
                 <li><a href="../html/sitemap.html">Mapa de sitio</a></li>
+
             </ul>
         </nav>
     </section>
@@ -220,97 +222,20 @@
 
     <!--Aquí termina el navegador-->
 
-    <!-- Aquí empieza el carrusel con bootstrap -->
-
-    <!--             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/z-hombre/adidasbaner1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/z-hombre/banernike.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/z-mujer/baner_mujer2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>  -->
-
-    <!-- Aquí termina el carrusel con bootstrap -->
-
             </header>
 
-            
-            
             <main class="contenido">
                 
                 <section class="cuerpoInd">
-
+                    <div><a href="../index.html">Fritz</a>> <a href="../html/mujer.html">Mujer</a></div>
                     <div class="cuerpoHijo-cp1">
                         <img class="imaCal" src="../img/z-mujer/baner_mujer3.jpg" alt="">
                     </div>
 
-    <!--                 <div class="cuerpoHijo-cpn2" >
-                        <img class="imaCal_1" src="../img/z-hombre/hombre.jpg" alt="">
-                    </div>
-                    
-                    <div  class="cuerpoHijo-cpn3">
-                        <img  class="imaCal_1"  src="../img/z-mujer/mujer.jpg" alt="">
-                    </div>
-                    
-                    <div class="cuerpoHijo-cpn4">
-                        <img  class="imaCal_1" src="../img/z-niños/niños.jpg" alt="">
-                    </div> -->
 
                 </section>
                 
-
-<!--Aquí empiezan los productos-->
-<!-- 
-                <section class="productsContainer">
-                    <article class="product1 product">
-                        <h3>Nombre</h3>
-                        <h3>S/.350.00</h3>
-                        <button>Agregar</button>
-                    </article>
-                    
-                    <article class="product2 product">
-                        <h3>Nombre</h3>
-                        <h3>S/.350.00</h3>
-                        <button>Agregar</button>
-                    </article>
-                
-                    <article class="product3 product">
-                        <h3>Nombre</h3>
-                        <h3>S/.350.00</h3>
-                        <button>Agregar</button>
-                    </article>
-                
-                    <article class="product4 product">
-                        <h3>Nombre</h3>
-                        <h3>S/.350.00</h3>
-                        <button>Agregar</button>
-                    </article>
-                </section>
-              
-  -->               
-<!--Aquí terminan los productos-->
-
-
-                
+<!-- Productos -->
                 
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
@@ -359,12 +284,6 @@
                     </div>
                 </div>
 
-
-
-
-
-
-
                 <section class="video">
                     <div>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/FECNXWMpoIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -377,15 +296,15 @@
                 <section class="footerSongs f1">
                     <section class="Suscribete"><!-- Aqui emepieza susbcripción -->
                         <h2 class="fritzSubcripcion">Fritz</h2>
-                        <h3>Suscribete</h3>
+                        <h3 class="suscribete_text">Suscribete</h3>
                         <form action="suscribete.php">
-                            <div>
+                            <div class="all__active--footer">
                                 <div>
-                                    <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese tu e-mail">
-                                </div><br>
-                                
+                                    <input class="control active--footer" type="text" name="correo" id="correo" placeholder="Ingrese tu e-mail">
+                                </div>
+            
                                 <div>
-                                    <input type="submit">
+                                    <input Class="enviar active--footer" type="submit">
                                 </div>
                             </div>
                         </form>
@@ -395,30 +314,39 @@
                 
                 <section class="footerSongs f2">
                     <section class="form-contact-us"><!--Aquí empiezan el formulario-->
-                        
+                    
                         <form action="guardar.php">
-                            <h2 class="contac">Contactanos</h2>
+                            <h2 class="contac" id="contactanos__id">Contactanos</h2>
                             <input class="controls" type="text" name="correo" id="correo" placeholder="Correo">
                             <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
                             <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
                             <input class="controls" type="text" name ="mensaje" id = "mensaje" placeholder="Escribe tu mensaje aquí">
-                            <input class="botons" type="submit">
+                            <input class="controls botons" type="submit">
                         </form>
                         
                     </section><!--Aquí terminan el formulario-->
                 </section>
                 
-                
+        
                 <section class="footerSongs f3">
                     <Section class="socialNetworks">
-                        <ul>
-                            <li>
-                                <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                        <!-- <ul> -->
+                            <div class="redes__titulo">
+                                <p class="redes">Nuestras redes</p>
+                            </div>
+                            <div class="redes__fb">
+                                <a href="https://www.facebook.com/fritz.lg"><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="redes__instagram">
+                                <a href="https://www.instagram.com/fritz_gs/"><i class="fab fa-instagram-square"></i></a>
+                            </div>
+                            <div class="redes__youtube">
                                 <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                                <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="redes__tiktok">
+                                <a href="https://www.linkedin.com/in/fritz-guzman-santiago-b0aa8059/"><i class="fab fa-linkedin"></i>
+                            </div>
+                        <!-- </ul> -->
                     </Section>
                 </section>
             </footer>

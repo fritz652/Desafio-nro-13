@@ -97,7 +97,7 @@ footer2 {
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1" "cuerpoHijo-cpn2 cuerpoHijo-cpn3 cuerpoHijo-cpn4" "cuerpoHIjo-cpn5 cuerpoHijo-cpn6 cuerpoHijo-cpn7"; }
+  grid-template-areas: "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1" "cuerpoHijo-cpn2 cuerpoHijo-cpn3 cuerpoHijo-cpn4" "tendencias tendencias tendencias" "cuerpoHIjo-cpn5 cuerpoHijo-cpn6 cuerpoHijo-cpn7"; }
 
 .cuerpoInd .cuerpoHijo-cp1 {
   grid-area: cuerpoHijo-cp1; }
@@ -111,6 +111,14 @@ footer2 {
 .cuerpoInd .cuerpoHijo-cpn4 {
   grid-area: cuerpoHijo-cpn4; }
 
+.cuerpoInd .tendencias {
+  grid-area: tendencias;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courgette', cursive; }
+
 .cuerpoHIjo-cpn5 {
   grid-area: cuerpoHijo-cpn5; }
 
@@ -122,7 +130,7 @@ footer2 {
 
 @media screen and (max-width: 768px) {
   .cuerpoInd {
-    grid-template-areas: "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1" "cuerpoHijo-cpn2 cuerpoHijo-cpn2 cuerpoHijo-cpn2" "cuerpoHijo-cpn3 cuerpoHijo-cpn3 cuerpoHijo-cpn3" "cuerpoHijo-cpn4 cuerpoHijo-cpn4 cuerpoHijo-cpn4" "cuerpoHijo-cpn5 cuerpoHijo-cpn5 cuerpoHijo-cpn5" "cuerpoHijo-cpn6 cuerpoHijo-cpn6 cuerpoHijo-cpn6" "cuerpoHijo-cpn7 cuerpoHijo-cpn7 cuerpoHijo-cpn7"; } }
+    grid-template-areas: "cuerpoHijo-cp1 cuerpoHijo-cp1 cuerpoHijo-cp1" "cuerpoHijo-cpn2 cuerpoHijo-cpn2 cuerpoHijo-cpn2" "cuerpoHijo-cpn3 cuerpoHijo-cpn3 cuerpoHijo-cpn3" "cuerpoHijo-cpn4 cuerpoHijo-cpn4 cuerpoHijo-cpn4" "tendencias tendencias tedencias" "cuerpoHijo-cpn5 cuerpoHijo-cpn5 cuerpoHijo-cpn5" "cuerpoHijo-cpn6 cuerpoHijo-cpn6 cuerpoHijo-cpn6" "cuerpoHijo-cpn7 cuerpoHijo-cpn7 cuerpoHijo-cpn7"; } }
 
 /* Fin grid 2 */
 /* Inicio grid 3 */
@@ -168,7 +176,7 @@ footer2 {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(4, auto);
   column-gap: 5px;
-  grid-template-areas: "redes__titulo" "redes__fb " "redes__instagram" "redes__youtube" "redes__tiktok"; }
+  grid-template-areas: "redes__titulo" "redes__tiktok" "redes__fb " "redes__instagram" "redes__youtube"; }
 
 .redes__titulo {
   grid-area: redes__titulo;
@@ -192,7 +200,7 @@ footer2 {
 
 @media screen and (max-width: 768px) {
   .redes__titulo {
-    grid-template-areas: "redes__titulo" "redes__fb" "redes__instagram" "redes__youtube" "redes__tiktok"; } }
+    grid-template-areas: "redes__titulo" "redes__tiktok" "redes__fb" "redes__instagram" "redes__youtube"; } }
 
 /* Fin grid 4 footer */
 /* Inicio del  Top bar */
@@ -313,6 +321,17 @@ footer2 {
   opacity: 1; }
 
 /* *****===>Fin del menu (nav)<===***** */
+/* :::::::::::::::::Inicio del para quien compras:::::::::::::::::::::::::::::::::: */
+.para__quien {
+  text-align: center;
+  padding: 20px;
+  margin-left: 20px;
+  font-family: 'Courgette', cursive; }
+
+/* ::::::::::::::::::::::::::::: */
+.historico {
+  right: 0px; }
+
 .carrusel {
   width: 100%;
   height: 100%; }
@@ -525,12 +544,13 @@ footer2 {
   /* margin: 5px; */
   font-size: 10px; }
 
-.all__active {
-  width: 100%; }
+.all__active--footer {
+  width: 90%; }
 
-.active {
+.active--footer {
   display: flex;
-  margin: 5px; }
+  margin: 20px 5px;
+  /* text-align: center; */ }
 
 .control {
   width: 100%;
@@ -556,39 +576,6 @@ footer2 {
 
 /* Aquí termina el footer */
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-.footer2 {
-  display: flex; }
-  .footer2 .suscribete2 {
-    text-align: center;
-    background-color: #0091d5;
-    color: #fff; }
-  .footer2 .contactanos2 {
-    text-align: center;
-    background-color: #000;
-    color: #fff; }
-    .footer2 .contactanos2 .contac2__caja {
-      width: 100%;
-      background: #fff;
-      border: none;
-      padding: 10px;
-      color: #000;
-      margin: 5px;
-      font-size: 10px; }
-    .footer2 .contactanos2 .boton2 {
-      width: 100%;
-      background: #8ec6ff;
-      border: none;
-      padding: 10px;
-      color: #fff;
-      /* margin: 2px; */
-      font-size: 20px;
-      padding: 5px; }
-  .footer2 .redes2 {
-    text-align: center;
-    background-color: #000;
-    color: #fff; }
-
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 .sitemap__navegadorDad--container > li > a {
   text-align: centar; }
 
