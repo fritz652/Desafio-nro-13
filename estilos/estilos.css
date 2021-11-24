@@ -81,10 +81,10 @@ h6 {
 /* Inicio grid 1 */
 .contenedor {
   display: grid;
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header header header" "contenido contenido contenido" "widget-1 widget-2 sidebar" "footer footer footer" "footer2 footer2 footer2"; }
+  grid-template-areas: "header header header" "contenido contenido contenido" "widget-1 widget-2 sidebar" "footer footer footer" "barraLegal barraLegal barraLegal"; }
 
 .header {
   /* background: #12203E; */
@@ -124,17 +124,13 @@ h6 {
   margin-top: 100px;
   /* lo pone mas abajo, tal por el momento queda */ }
 
-footer2 {
+.contenedor .barraLegal {
   width: 100%;
-  grid-area: footer;
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  /* lo pone mas abajo, tal por el momento queda */ }
+  grid-area: barraLegal; }
 
 @media screen and (max-width: 768px) {
   .contenedor {
-    grid-template-areas: "header header header" "contenido contenido contenido" "widget-1 widget-1 widget-2" "sidebar sidebar sidebar" "footer footer footer" "footer2 footer2 footer2"; } }
+    grid-template-areas: "header header header" "contenido contenido contenido" "widget-1 widget-1 widget-2" "sidebar sidebar sidebar" "footer footer footer" "barraLegal  barraLegal  barraLegal"; } }
 
 /* Fin grid 1 */
 /* Inicio grid 2 */
@@ -633,6 +629,20 @@ footer2 {
   /* margin: 2px; */
   font-size: 20px;
   padding: 5px; }
+
+.barraLegal {
+  background-color: #333333;
+  color: white;
+  padding: 1rem 2.5rem;
+  padding-top: 1rem;
+  padding-right: 2.5rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem; }
+
+.barraLegal > div {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
 
 /* Aquí termina el footer */
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

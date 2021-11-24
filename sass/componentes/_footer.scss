@@ -166,6 +166,21 @@
     padding: 5px;
 }
 
+.barraLegal{
+    background-color: #333333;
+    color: white;
+    padding: 1rem 2.5rem;
+    padding-top: 1rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+}
+.barraLegal > div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    
+} 
 /* Aquí termina el footer */
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

@@ -3,7 +3,7 @@
 
 .contenedor {
 	display: grid;
-	grid-gap: 20px;
+	/* grid-gap: 20px; */
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(5, auto);
 
@@ -11,7 +11,7 @@
 						 "contenido contenido contenido"
 						 "widget-1 widget-2 sidebar"
 						 "footer footer footer"
-                         "footer2 footer2 footer2"
+                         "barraLegal barraLegal barraLegal";
 }
 
 .header {
@@ -59,12 +59,10 @@
 
 }
 
-footer2{
+.contenedor .barraLegal {
     width: 100%;
-	grid-area: footer;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px; /* lo pone mas abajo, tal por el momento queda */
+	grid-area: barraLegal;
+    
 }
 
 
@@ -75,7 +73,7 @@ footer2{
 						 "widget-1 widget-1 widget-2"
 						 "sidebar sidebar sidebar"
 						 "footer footer footer"
-                         "footer2 footer2 footer2";
+                         "barraLegal  barraLegal  barraLegal";
 	}
 }
 
